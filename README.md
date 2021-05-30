@@ -9,4 +9,5 @@ To make the website work on a localhost:
 2. Install node modules 
 3. Run the command:nodemon app.js
 There it is a working Covid Tracker with Voice activated Assistant.
-
+# Link of the Working Site:
+https://aayushi-das.github.io/Covid-19-Tracker/

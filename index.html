@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+<body>
+
+
+      <!-- Page Contents -->
+      <div class="pusher">
+        <div class="ui inverted vertical masthead center aligned segment">
+
+          <div class="ui container">
+            <div class="ui large secondary inverted pointing menu">
+              <a class="toc item">
+                <i class="sidebar icon"></i>
+              </a>
+              <a class="active item">Home</a>
+              <a class="item" href="#news">News</a>
+              <a class="item" href="#about">About</a>
+              <a class="item" href="#contact">Contact</a>
+
+            </div>
+          </div>
+
+          <div class="ui text container" id="searchContainer">
+            <h1 class="ui inverted header">
+              COVID-19 Updates
+            </h1>
+            <h2>Search for a country</h2>
+
+            <div class="ui search" style="padding: 20px">
+                <div class="ui icon input" id="loading">
+                  <input class="prompt" id="search" type="text" placeholder="Search...">
+                  <i class="search icon"></i>
+                </div>
+                <div class="results"></div>
+              </div>
+
+          </div>
+
+
+
+         <!-- COVID CASE COUNT -->
+          <div class="ui text container covid" id="caseContainer">
+            <div class="ui two column centered grid covid">
+              <div class="column row covid" id="country">
+
+              </div>
+              <div class="two column row covid" id="head">
+
+              </div>
+              <div class="column row covid" id="dead">
+              </div>
+              <div class="column row covid" id="recovered">
+              </div>
+            </div>
+            <div class="column row covid" id="dateof">
+            </div>
+          </div>
+
+        </div>
+
+        <div id="extend"></div>
+
+        <div class="ui vertical stripe segment" id = "news">
+          <h3 class="ui center aligned header">Latest COVID-19 News</h3>
+          <p class="ui center aligned header" id="countryName" style="padding-bottom: 18px;">Worldwide</p>
+          <div class="ui centered stackable grid articles">
+            <div class="middle aligned row">
+
+
+            </div>
+          </div>
+        </div>
+
+        <iframe width="100%" height="502" src="https://app.developer.here.com/coronavirus/" frameborder="0"></iframe>
+
+        <div class="ui vertical stripe segment">
+
+
+
+        </div>
+          <div class="ui vertical stripe segment" id = "about">
+            <div class="ui middle aligned stackable grid container">
+              <div class="row">
+                <div class="eight wide column">
+                  <h1 class="ui header">
+                    <div class="content">
+                      About
+                      <h4>
+                        <br>
+                      <div>
+                        <a href = "https://aayushi-das.github.io/Personalized-Website/">Aayushi Das's Portfolio</a>
+                      </div>
+                      <hr>
+                      <div>
+                        <a href = "https://shree-0909.github.io/l_LEARN_PARADIGMS/">Shrey Binduraj's Portfolio</a>
+                      </div>
+                      <hr>
+                    </h4>
+                    </div>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ui vertical stripe masthead segment" id = "contact">
+            <div class="ui middle aligned stackable grid container">
+              <div class="row">
+                <div class="eight wide column">
+                  <h3 class="ui header">Contact</h3>
+                  <form class="ui form">
+                    <div class="field">
+                      <label>First Name</label>
+                      <input type="text" name="name">
+                    </div>
+                    <div class="field">
+                      <label>Email</label>
+                      <input type="email" >
+                    </div>
+                    <div class="field">
+                      <label>What’s on your mind?</label>
+                      <textarea></textarea>
+                    </div>
+                    <button class=“ui button” type=“submit” id = "submitBtn">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+<div class="alan-btn"></div>
+
+<script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "aa08634228b1dd6e1be7402efcb9e3612e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData) {
+      if (commandData.command === "go:back") {
+        //call client code that will react on the received command
+      }
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
+
+        <div class="ui inverted vertical footer segment">
+          <div class="ui container">
+            <div class="ui inverted equal height grid">
+              <div class="column">
+                <h4 class="ui inverted centered header" style="text-align: center; padding:10px; font-weight: 100;">&#169 Copyright 2021</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+      <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
